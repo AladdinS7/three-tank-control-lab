@@ -4,7 +4,7 @@ A student-focused Process Dynamics laboratory by AladdinS7: follow water through
 
 **Project reference and credit:** Kyle Conner created the first iteration, [Three Tanks in Series: Closed-Loop Transfer Function](https://kconner25.github.io/three-tank-closed-loop/) ([original repository](https://github.com/kconner25/three-tank-closed-loop)). This separate project uses a fresh implementation. Kyle's repository has no license or explicit reuse grant, so no original implementation, text, or assets are redistributed here. His repository and site remain untouched. The layout direction also draws on AladdinS7's [Propane Separation Lab](https://aladdins7.github.io/propane-separation-lab/).
 
-Publication target: [GitHub Pages](https://AladdinS7.github.io/three-tank-control-lab/) · [repository](https://github.com/AladdinS7/three-tank-control-lab). **Publication verification is pending** until the deployment check is recorded in the final test report.
+Live site: [GitHub Pages](https://AladdinS7.github.io/three-tank-control-lab/) · [repository](https://github.com/AladdinS7/three-tank-control-lab). **Published and verified on November 11, 2026.** The default solver, guided run, process inspector, and reset were exercised at the live project URL. See the [verification record](docs/TEST-RESULTS.md).
 
 ## Start the lab
 

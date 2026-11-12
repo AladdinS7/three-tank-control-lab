@@ -47,4 +47,10 @@ UI changes made during QA: integer sample slider; explicit warning visibility; s
 
 This is a deterministic linear teaching model, not validated tank hardware. No physical experiments, nonlinear tank solver comparison, actuator saturation, or sensor-delay model were performed. Browser QA is a recorded manual scenario pass, not an automated exhaustive UI regression suite. Screen-reader output, actual iOS/Android hardware, Firefox/Safari, and prolonged stress sessions were not tested. A 20% deviation warning is an openly labeled heuristic, not a certified accuracy bound.
 
-GitHub Pages live verification will be recorded below after publication.
+## Live deployment verification
+
+Published and visited on November 11, 2026 (America/New_York): [live site](https://aladdins7.github.io/three-tank-control-lab/) · [repository](https://github.com/AladdinS7/three-tank-control-lab).
+
+GitHub Pages was configured for this new repository only, from `main` / root. Implementation commit `1607a0b39973a49f02b7b91816dd81374f36a6b6` loaded at the public project URL. The live runtime showed “Ready · calculated on your device”; default metrics reproduced 1.1333 m final level, .0667 m offset, 29.86% overshoot, and 100.7 min settling. A guided Apply/Play/Pause/Reset cycle and the disturbance block inspector were exercised successfully. No live-origin application error was observed; earlier intentional localhost failure-fixture errors were identified separately.
+
+All local document/asset links resolve. A final independent review reran all 31 tests successfully and checked HTML and Markdown links. The final documentation/exercise wording update does not change the engineering engine. Your propane site and Kyle's original were not modified.

@@ -35,20 +35,20 @@ These are user-specified goals. The log does not imply that the student personal
 
 ## New implementation change record
 
-The implementation is being authored afresh around a dependency-free JavaScript engineering module (`model.js`), rendering/interaction code (`app.js`), an HTTP-served page (`index.html` / `styles.css`), and explicit module-load handling (`boot.js`). It carries forward the model and useful learning concepts while implementing the student-requested workflow. The parent task will append the final implementation details and verified test results below when those checks complete.
+The implementation was authored afresh around a dependency-free JavaScript engineering module (`model.js`), rendering/interaction code (`app.js`), an HTTP-served page (`index.html` / `styles.css`), and explicit module-load handling (`boot.js`). It carries forward the model and useful learning concepts while implementing the student-requested workflow. Final implementation details and executed checks are recorded below.
 
 ## Verification ledger
 
-| Check | Actual status at documentation handoff |
+| Check | Final observed status |
 | --- | --- |
 | Original README/source/license review | Completed |
 | Original solver self-tests | Passed, executed locally |
 | Original default independently checked | Passed, inverse Laplace vs RK4 |
-| New model numerical tests | Pending final test record |
-| Browser controls, validation, reset, presets, compare | Pending final test record |
-| Keyboard navigation and mobile layout | Pending final test record |
-| Solver-load error and project-path loading | Pending final test record |
-| Repository creation and GitHub Pages live URL | Pending verification |
+| New model numerical tests | 31 passed; independent review rerun passed |
+| Browser controls, validation, reset, presets, compare | Passed recorded manual scenarios |
+| Keyboard navigation and mobile layout | Checked at desktop and 390px phone viewport |
+| Solver-load error and project-path loading | Error fixture and subpath loading verified |
+| Repository creation and GitHub Pages live URL | Separate public repository created; live URL loaded and solver exercised |
 
 Model reporting: AI assistance was provided through Codex. The precise underlying model identifier and any comparative model-performance claims were not independently verified, so none are asserted.
 
@@ -59,3 +59,7 @@ The AI implemented fresh dependency-free HTML/CSS/JavaScript, an original proces
 Independent review triggered fixes for numeric overflow, tiny-scale integration, long-run overshoot undersampling, near-zero gain tails, exact disturbance jumps, and phone readability. The final engineering suite passed 31 tests. Real-browser scenarios and limitations are detailed in [TEST-RESULTS.md](TEST-RESULTS.md).
 
 The student reiterated that the propane website must remain untouched. All new work stays in a separate project. When automatic approval review did not recognize authorization in the pasted brief, the student directly confirmed: “Yes, create and publish the new public project.” No modifications were made to Kyle's repository or the student's propane repository.
+
+## Publication
+
+Published to [the separate repository](https://github.com/AladdinS7/three-tank-control-lab) and [GitHub Pages project site](https://aladdins7.github.io/three-tank-control-lab/). Source implementation commit: `1607a0b39973a49f02b7b91816dd81374f36a6b6`. Pages serves `main` at the repository root with `.nojekyll`. The live page loaded the solver, reproduced the default values, and passed a guided run, pause, reset, and disturbance-inspector check. Final documentation records that verification.

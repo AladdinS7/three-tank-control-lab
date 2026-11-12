@@ -1,0 +1,9 @@
+{
+  "name": "three-tank-control-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A guided three-tank proportional feedback control learning lab",
+  "scripts": { "test": "node --test tests/*.test.mjs", "start": "python3 -m http.server 8000" },
+  "engines": { "node": ">=20" }
+}
